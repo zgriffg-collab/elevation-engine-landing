@@ -362,12 +362,9 @@ export const brand: BrandConfig = {
       { href: "/#how-it-works", label: "How it works" },
       { href: "/#pricing", label: "Pricing" },
       { href: "/#faq", label: "FAQ" },
-      // Your owner's manual (how to rebrand, theme, deploy). Remove this line
-      // before going live if you'd rather keep the guide unlisted.
-      { href: "/guide", label: "Guide" },
     ],
-    // "Themes" menu with live previews of every look. Set false for launch.
-    themePicker: true,
+    // "Design" menu with live theme/layout previews. Off for the public site.
+    themePicker: false,
     ctaLabel: "Start free",
     ctaHref: "/pricing",
     loginLabel: "Log in",
