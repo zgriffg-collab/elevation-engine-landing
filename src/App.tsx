@@ -357,7 +357,7 @@ export function Nav({
             <img
               src={brand.logo}
               alt={brand.logoAlt}
-              className="h-5 sm:h-7 shrink-0"
+              className="h-10 sm:h-12 shrink-0"
             />
           </a>
           <div className="hidden lg:flex flex-1 items-center justify-center gap-1.5 text-sm text-slate-700 min-w-0">
