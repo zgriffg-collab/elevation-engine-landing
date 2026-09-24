@@ -352,15 +352,15 @@ export function Nav({
   return (
     <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
       <div className="w-full max-w-6xl">
-        <nav className="glass rounded-2xl px-4 py-2.5 flex items-center gap-3">
-          <a href="/" className="flex items-center gap-2 pr-2 shrink-0">
+        <nav className="glass rounded-2xl px-4 py-2.5 grid grid-cols-[minmax(0,_1fr)_auto] items-center gap-3 lg:grid-cols-[minmax(0,_1fr)_auto_minmax(0,_1fr)]">
+          <a href="/" className="flex items-center gap-2 pr-2 justify-self-start">
             <img
               src={brand.logo}
               alt={brand.logoAlt}
               className="h-10 sm:h-12 shrink-0"
             />
           </a>
-          <div className="hidden lg:flex flex-1 items-center justify-center gap-1.5 text-sm text-slate-700 min-w-0">
+          <div className="hidden lg:flex items-center justify-center gap-1.5 text-sm text-slate-700">
             {links.map((l) => {
               const active = isActive(l.href);
               return (
@@ -380,7 +380,7 @@ export function Nav({
             })}
             {brand.nav.themePicker && <ThemesMenu />}
           </div>
-          <div className="flex flex-1 lg:flex-none items-center justify-end gap-2 shrink-0">
+          <div className="flex items-center justify-end gap-2 justify-self-end">
             <a
               href={brand.nav.loginHref}
               target="_blank"
