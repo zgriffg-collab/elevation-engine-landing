@@ -227,7 +227,7 @@ export interface BrandConfig {
     note: string;
     tiers: Array<{
       name: string;
-      price: string; // e.g. "$97" or "Custom"
+      price: string; // e.g. "$497" or "Custom"
       cadence: string; // e.g. "/mo"
       blurb: string;
       features: string[];
@@ -634,49 +634,67 @@ export const brand: BrandConfig = {
     heading: "Simple pricing that scales with you.",
     subheading:
       "Start free. Upgrade when the AI is closing more than it costs.",
-    note: "All plans include every channel and a 14-day free trial. Cancel anytime.",
+    note: "Every plan includes a 14-day free trial. Extra credits are $0.25 each. Cancel anytime.",
     tiers: [
       {
-        name: "Starter",
-        price: "$27",
+        name: "Basic",
+        price: "$297",
         cadence: "/mo",
-        blurb: "For solo founders and small teams getting started.",
+        blurb:
+          "One channel. AI that answers and books. Built for a single inbox.",
         features: [
-          "1 channel",
-          "AI replies 24/7",
-          "Lead capture & tagging",
-          "Email support",
+          "500 credits / month",
+          "14-day trial · 150 credits",
+          "1 channel (Website Widget, Instagram, or Messenger)",
+          "1 Max AI agent",
+          "Comment-to-DM",
+          "Media understanding",
+          "Appointment booking",
+          "Credit top-ups ($0.25/credit)",
+          "20K context, 20 replies/chat",
+          "No team seats, productivity suite, or developer tools",
         ],
         cta: { label: "Start free", href: "/pricing" },
       },
       {
-        name: "Growth",
-        price: "$97",
+        name: "Standard",
+        price: "$497",
         cadence: "/mo",
-        blurb: "For growing businesses across multiple channels.",
+        blurb:
+          "Multi-channel AI sales agent. Books calls across your DMs around the clock.",
         features: [
-          "All channels",
-          "Appointment booking",
-          "Campaigns & follow-ups",
-          "Integrations",
-          "Priority support",
+          "2,000 credits / month",
+          "14-day trial · 400 credits",
+          "Up to 3 channels (incl. WhatsApp Web + Email)",
+          "2 agents (Max + Mini)",
+          "3 team seats",
+          "Knowledge base",
+          "Daily summaries",
+          "Productivity tools + web search",
+          "50K context, 50 replies/chat",
+          "Credit top-ups available",
         ],
         cta: { label: "Start free", href: "/pricing" },
         featured: true,
       },
       {
-        name: "Pro",
-        price: "$297",
+        name: "Premium",
+        price: "$997",
         cadence: "/mo",
-        blurb: "For teams that want power and bring-your-own-AI-key.",
+        blurb:
+          "Unlimited multi-channel AI sales agents. Find leads and book calls, with developer tools built in.",
         features: [
-          "Everything in Growth",
-          "Higher usage limits",
-          "Bring your own AI key",
-          "Advanced automations",
-          "Dedicated support",
+          "5,000 credits / month",
+          "14-day trial · 750 credits",
+          "Unlimited channels",
+          "5 agents",
+          "10 team seats",
+          "Find Leads",
+          "Developer tools (API, webhooks, MCP)",
+          "100K context, unlimited replies/chat",
+          "Credit top-ups available",
         ],
-        cta: { label: "Talk to us", href: "/contact" },
+        cta: { label: "Start free", href: "/pricing" },
       },
     ],
   },

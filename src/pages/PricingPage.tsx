@@ -17,20 +17,20 @@ const PRICING_FAQS: Array<[string, string]> = brand.faq.items;
 // or swap for your own copy.
 const INCLUDED_LIST: Array<{ t: string; b: string }> = [
   {
-    t: "Every channel, one inbox",
-    b: "Connect WhatsApp, Instagram, Messenger, web chat and SMS. Every conversation lands in a single place.",
+    t: "AI that answers and books",
+    b: "It replies in seconds, qualifies the lead and books the appointment on the channels included in your plan.",
   },
   {
     t: "Replies around the clock",
-    b: "Your AI sales agent answers in seconds, day or night, in your brand voice and your customer's language.",
+    b: "Your AI sales agent answers day or night, in your brand voice and your customer's language.",
   },
   {
     t: "Books and follows up",
     b: "It qualifies leads, handles questions, books appointments and follows up so nothing slips through the cracks.",
   },
   {
-    t: "Free trial on every plan",
-    b: "Connect a channel and run the AI on real conversations before billing starts. No card required to begin.",
+    t: "14-day free trial on every plan",
+    b: "Basic includes 150 trial credits, Standard 400 and Premium 750. Extra credits are $0.25 each.",
   },
 ];
 
@@ -163,7 +163,7 @@ export default function PricingPage() {
               emoji="brain.png"
               title="Everything you need"
               titleAccent="in every plan"
-              sub="No hidden tiers, no surprises. Every plan includes a free trial and the channels your customers already use."
+              sub="No hidden tiers, no surprises. Every plan includes a 14-day free trial. Channels, seats and credits scale with the plan."
               align="center"
               maxWidth="max-w-3xl"
             />
